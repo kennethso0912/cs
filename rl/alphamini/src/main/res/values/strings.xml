@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">alphamini</string>
+    <string name="off">onOff</string>
+    <string name="on">On</string>
+    <string name="onred">onRed</string>
+    <string name="onBlue">onBlue</string>
+    <string name="ongreen">onGreen</string>
+    <string name="onwhite">onWhite</string>
+</resources>

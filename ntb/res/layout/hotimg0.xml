@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    
+    >
+    <!-- 注意scaleType要为'matrix'即原始图像的大小，这样才能保证绘制的点的位置没有发生变化，如果其它，则需要另做转换  android:background="@android:color/white" android:scaleType="matrix"-->
+    <com.ubtechinc.cruzr.nineteenbig.view.MapAreaView
+        android:id="@+id/map_areaview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="matrix"
+        android:src="@drawable/locbig" />
+</HorizontalScrollView>

@@ -1,0 +1,50 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+//apply plugin: 'com.jfrog.artifactory'
+//apply plugin: 'maven-publish'
+
+//publishing {
+//    publications {
+//        mavenJava(MavenPublication) {
+//            from components.java
+//            groupId 'com.ubtrobot.lib.packets' // 所有模块保持一致
+//            artifactId 'packet-ledentity' // packet-{module} 格式，module 为模块名
+//            version '1.0.0' // x.y.z。x 为主版本，不兼容升级情况升级该位；y 为从版本，新增功能升级该位；z 为修订版本，修复问题情况升级该位
+//        }
+//    }
+//}
+//
+//artifactory {
+//    contextUrl = artifactory_url
+//
+////    publish {
+////        repository {
+////            repoKey = artifactory_repo_key
+////            username = artifactory_username
+////            password = artifactory_password
+////        }
+////
+////        defaults {
+////            publications('mavenJava')
+////            publishArtifacts = true
+////        }
+////    }
+//
+//    resolve {
+//        repoKey = 'jcenter'
+//    }
+//    tasks.withType(JavaCompile) {
+//        options.encoding = "UTF-8"
+//    }
+//}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

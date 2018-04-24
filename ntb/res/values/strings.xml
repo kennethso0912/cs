@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">NineteenBig</string>
+    <string name="speak_content">需要查看%s的详细信息介绍吗？</string>
+    <string name="welcome">欢迎首长莅临砥砺奋进五年成果展;可否让我为您介绍场馆展示信息吗？</string>
+    <string name="map">请您看屏幕 这是一张场馆展示图     您可以点击图上想了解的场馆位置进行了解哦</string>
+    <string name="default_face_id">face_love</string>
+</resources>

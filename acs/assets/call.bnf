@@ -1,0 +1,17 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar call;
+!slot <name>;
+!slot <age>;
+!slot <askPre>; 
+!slot <app1>;
+!slot <app2>;
+!slot <app3>;
+!slot <app4>;
+!slot <app8>;
+!start <askStart>;
+<askStart>:<app1>|<app2>|<app3>|<app4>|<app8>;
+<app1>:自由活动;
+<app2>:摆Pose|摆个Pose|换一个|下一个|再来一次|换一套|二连拍|两连拍|三连拍|四连拍|五连拍|六连拍|七连拍|八连拍|九连拍|十连拍;
+<app3>:录入我的信息|录入信息|你好;
+<app4>:跳舞|跳个舞|跳个舞吧|再跳一个;
+<app8>:我联系客服|我要联系客服|联系客服|要联系客服|客服|是|再次拨打|继续拨打;

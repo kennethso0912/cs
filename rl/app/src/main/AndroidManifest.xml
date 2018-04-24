@@ -1,0 +1,65 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.ubtrobot.service">
+    <uses-permission android:name="com.ubtrobot.master.permission.MASTER" />
+    <uses-permission android:name="com.ubtrobot.master.permission.MASTER_SYSTEM_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="com.ubtrobot.master.permission.MASTER" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- android:roundIcon="@mipmap/ic_launcher_round"-->
+    <application
+        android:name=".LedApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.ubtrobot.service.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="${CATEGORY}" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.ubtrobot.service.LedService"
+                android:exported="true">
+
+            <meta-data android:name="master.service" android:resource="@xml/service_led" />
+            <!--<intent-filter>-->
+                <!--&lt;!&ndash; 声明 Action，固定为下述值 &ndash;&gt;-->
+                <!--<action android:name="com.ubtrobot.master.action.CALLABLE" />-->
+                <!--&lt;!&ndash; 声明应答，一个 <data> 对应一个调用 &ndash;&gt; &lt;!&ndash; scheme:协议，固定为“call” &ndash;&gt; &lt;!&ndash; host，类似于域名。区分应用与服务 &ndash;&gt;-->
+                <!--&lt;!&ndash; “应用”host:固定为“ubtrobot.com” &ndash;&gt;-->
+                <!--&lt;!&ndash; “服务”host:“服务名称” + “ubtrobot.com”，“${service-name}.ubutrobot.com” &ndash;&gt; &lt;!&ndash; path，标识 host 下的一个调用 &ndash;&gt;-->
+                <!--<data-->
+                    <!--android:host="led.ubtrobot.com"-->
+                    <!--android:path="/setOn"-->
+                    <!--android:scheme="call" />-->
+                <!--<data-->
+                    <!--android:host="led.ubtrobot.com"-->
+                    <!--android:path="/setOff"-->
+                    <!--android:scheme="call"/>-->
+                <!--<data-->
+                    <!--android:host="led.ubtrobot.com"-->
+                    <!--android:path="/getList"-->
+                    <!--android:scheme="call" />-->
+            <!--</intent-filter>-->
+        </service>
+        <meta-data android:name="mst-conn-mod" android:value="MST_SERVICE" />
+    </application>
+
+</manifest>

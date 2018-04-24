@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="map_area">
+        <item>map_xj</item>
+        <item>map_xz</item>
+        <item>map_gl</item>
+        <item>map_md</item>
+        <item>map_sn</item>
+    </string-array>
+    
+    <string-array name="map_xj_code">
+        <item>sharp</item>
+        <item>夏普</item>
+    </string-array>
+    
+    <string-array name="map_xz_code">
+        <item>panasonic</item>
+        <item>松下生活馆</item>
+    </string-array>
+    
+     <string-array name="map_gl_code">
+        <item>gree</item>
+        <item>格力</item>
+    </string-array>
+    
+    <string-array name="map_md_code">
+        <item>midea</item>
+        <item>美的</item>
+    </string-array>
+    
+     <string-array name="map_sn_code">
+        <item>sony</item>
+        <item>索尼</item>
+    </string-array>
+    
+     <!--746x420
+    <integer-array name="map_xj">
+        <item>60</item>
+        <item>132</item>
+        <item>60</item>
+        <item>180</item>
+        <item>98</item>
+        <item>180</item>
+        <item>98</item>
+        <item>132</item>
+    </integer-array> -->
+    
+    <!--970X546  
+    <integer-array name="map_xj">
+        <item>78</item>
+        <item>117</item>
+        <item>78</item>
+        <item>158</item>
+        <item>127</item>
+        <item>158</item>
+        <item>127</item>
+        <item>117</item>
+    </integer-array>-->
+    
+    <!-- 1920x1080 -->
+    <integer-array name="map_xj">
+        <item>155</item>
+        <item>230</item>
+        <item>155</item>
+        <item>315</item>
+        <item>250</item>
+        <item>315</item>
+        <item>250</item>
+        <item>230</item>
+    </integer-array>
+    
+    <!--746x420 
+    <integer-array name="map_xz">
+        <item>60</item>
+        <item>228</item>
+        <item>60</item>
+        <item>308</item>
+        <item>98</item>
+        <item>308</item>
+        <item>98</item>
+        <item>228</item>
+    </integer-array> -->
+    
+    <!--970X546
+    <integer-array name="map_xz">
+        <item>78</item>
+        <item>200</item>
+        <item>78</item>
+        <item>270</item>
+        <item>127</item>
+        <item>270</item>
+        <item>127</item>
+        <item>200</item>
+    </integer-array>-->
+    
+    <!-- 1920X1080 -->
+    <integer-array name="map_xz">
+        <item>155</item>
+        <item>395</item>
+        <item>155</item>
+        <item>535</item>
+        <item>250</item>
+        <item>535</item>
+        <item>250</item>
+        <item>395</item>
+    </integer-array>
+    
+    <!--746x420 
+    <integer-array name="map_gl">
+        <item>60</item>
+        <item>312</item>
+        <item>60</item>
+        <item>355</item>
+        <item>98</item>
+        <item>355</item>
+        <item>98</item>
+        <item>312</item>
+    </integer-array> -->
+    
+    <!--970X546
+     <integer-array name="map_gl">
+        <item>78</item>
+        <item>273</item>
+        <item>78</item>
+        <item>310</item>
+        <item>127</item>
+        <item>310</item>
+        <item>127</item>
+        <item>273</item>
+    </integer-array>-->
+    
+    <!-- 1920X1080 -->
+    <integer-array name="map_gl">
+        <item>155</item>
+        <item>545</item>
+        <item>155</item>
+        <item>615</item>
+        <item>250</item>
+        <item>615</item>
+        <item>250</item>
+        <item>545</item>
+    </integer-array>
+    
+     <!--746x420 
+     <integer-array name="map_md">
+        <item>75</item>
+        <item>387</item>
+        <item>75</item>
+        <item>450</item>
+        <item>98</item>
+        <item>450</item>
+        <item>98</item>
+        <item>387</item>
+    </integer-array> -->
+    
+    
+    <!--970X546
+    <integer-array name="map_md">
+        <item>92</item>
+        <item>340</item>
+        <item>92</item>
+        <item>395</item>
+        <item>127</item>
+        <item>395</item>
+        <item>127</item>
+        <item>340</item>
+    </integer-array>-->
+    
+    <!-- 1920x1080 -->
+     <integer-array name="map_md">
+        <item>190</item>
+        <item>672</item>
+        <item>190</item>
+        <item>780</item>
+        <item>250</item>
+        <item>780</item>
+        <item>250</item>
+        <item>672</item>
+    </integer-array>
+    
+    <!--746x420 
+    <integer-array name="map_sn">
+        <item>95</item>
+        <item>475</item>
+        <item>95</item>
+        <item>485</item>
+        <item>137</item>
+        <item>485</item>
+        <item>137</item>
+        <item>535</item>
+        <item>190</item>
+        <item>535</item>
+        <item>190</item>
+        <item>475</item>
+    </integer-array> -->
+    
+     <!--970X546
+     <integer-array name="map_sn">
+        <item>125</item>
+        <item>417</item>
+        <item>125</item>
+        <item>423</item>
+        <item>178</item>
+        <item>423</item>
+        <item>178</item>
+        <item>470</item>
+        <item>245</item>
+        <item>470</item>
+        <item>245</item>
+        <item>417</item>
+    </integer-array>-->
+    
+     <!-- 1920X1080 -->
+     <integer-array name="map_sn">
+        <item>245</item>
+        <item>825</item>
+        <item>245</item>
+        <item>840</item>
+        <item>355</item>
+        <item>840</item>
+        <item>355</item>
+        <item>930</item>
+        <item>485</item>
+        <item>930</item>
+        <item>485</item>
+        <item>825</item>
+    </integer-array>
+    
+    <string-array name="answer_result">
+        <item>好的</item>
+        <item>好</item>
+        <item>能</item>
+        <item>可以</item>
+        <item>行</item>
+        <item>你介绍一下</item>
+        <item>了解一下</item>
+        <item>了解</item>
+        <item>介绍</item>
+        <item>没问题</item>
+    </string-array>
+   
+</resources>

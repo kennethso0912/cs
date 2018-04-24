@@ -1,0 +1,84 @@
+ext {
+    android = [
+            compileSdkVersion : 19,
+            buildToolsVersion : "25.0.0",
+            minSdkVersion     : 19,
+            targetSdkVersion  : 21
+    ]
+
+    led = [
+            versionCode       : 1,
+            versionName       : "v2.0.0.1"
+    ]
+
+    androidSupportVersion = [
+            supportVer :  "25.1.0"
+    ]
+
+    thirdSupprotVersion = [
+            hugoVersion : "1.2.1",
+            timberVersion : "4.5.1",
+
+            daggerVersion : "2.7",
+
+            mockitoVersion : "1.10.19",
+            junitVersion : "4.12",
+            robolectricVersion : "3.0",
+            hamcrestVersion : "1.3",
+            guavaVer : "19.0",
+            protobuflite : "3.0.1",
+            protobufjava : "3.4.0",
+    ]
+
+    pluginVersion = [
+            protocArtifact : "3.2.0",
+            javaliteArtifact : "3.0.0",
+    ]
+
+    plugin = [
+            //----------------------ProtocolBuffer------------------
+            protocArtifact : "com.google.protobuf:protoc:${pluginVersion.protocArtifact}",
+            javaliteArtifact : "com.google.protobuf:protoc-gen-javalite:${pluginVersion.javaliteArtifact}",
+    ]
+
+    deps = [
+            //-------------------------------Android -----------------------------
+            supportV4 : "com.android.support:support-v4:${androidSupportVersion.supportVer}",
+            appCompatV7 : "com.android.support:appcompat-v7:${androidSupportVersion.supportVer}",
+            design : "com.android.support:design:${androidSupportVersion.supportVer}",
+            cardviewV7 : "com.android.support:cardview-v7:${androidSupportVersion.supportVer}",
+            supportAnnotations: 'com.android.support:support-annotations:25.0.0',
+
+            //--------------------------------ProtocolBuffer-------------------------
+            protobufLite : "com.google.protobuf:protobuf-lite:${thirdSupprotVersion.protobuflite}",
+            protobufJava : "com.google.protobuf:protobuf-java:${thirdSupprotVersion.protobufjava}",
+            //--------------------------------google Guava-------------------------
+            guava : "com.google.guava:guava:${thirdSupprotVersion.guavaVer}",
+
+            //-----------------------------------dagger------------------------------------------
+            dagger_compiler : "com.google.dagger:dagger-compiler:${thirdSupprotVersion.daggerVersion}",
+            dagger : "com.google.dagger:dagger:${thirdSupprotVersion.daggerVersion}",
+
+            //---------------------------------调试相关--------------------------------------
+            timber : "com.jakewharton.timber:timber:${thirdSupprotVersion.timberVersion}",
+            hugo: "com.jakewharton.hugo:hugo-annotations:${thirdSupprotVersion.hugoVersion}",
+
+            //-----------------------------------单元测试相关---------------------------------
+            junit : "junit:junit:${thirdSupprotVersion.junitVersion}",
+            mockito : "org.mockito:mockito-core:${thirdSupprotVersion.mockitoVersion}",
+            robolectric : "org.robolectric:robolectric:${thirdSupprotVersion.robolectricVersion}",
+            hamcrest : "org.hamcrest:hamcrest-core:${thirdSupprotVersion.hamcrestVersion}",
+            truth    : 'com.google.truth:truth:0.29',
+            //-----------------------------Dex分包-----------------------
+            multidex:'com.android.support:multidex:1.0.1',
+            //---------------------------json解析------------------------
+            gson:'com.google.code.gson:gson:2.7',
+
+            utillib : "com.ubtrobot.lib.packets:utillib:1.0.3",
+            servicebus: 'com.ubtrobot.master:master:0.3.0-SNAPSHOT',
+            ulog : 'com.ubtrobot.ulog:logger-android:0.0.1',
+            action : 'com.ubtrobot.lib.packets:action:0.0.2',
+
+            servicebusProtobufParam:'com.ubtrobot.master:protobuf-param:0.3.0-SNAPSHOT'
+    ]
+}

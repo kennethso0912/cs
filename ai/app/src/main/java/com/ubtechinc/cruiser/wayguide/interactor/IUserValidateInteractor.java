@@ -1,0 +1,1 @@
+package com.ubtechinc.cruiser.wayguide.interactor;/** * Created on 2017/3/4. * * @Author KennethSo * @Version 1.0.0 * @Des */public interface IUserValidateInteractor {    void onCreate();    boolean validate();}

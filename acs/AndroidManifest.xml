@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ubtechinc.cruzr.coreservices"
+    android:versionCode="1"
+    android:versionName="1.0.0.2" >
+
+    <!-- android:sharedUserId="android.uid.system" -->
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".CruzrApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ubtechinc.cruzr.coreservices.activity.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ubtechinc.iflytek.face.FaceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ubtechinc.iflytek.face.JumpActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 胸部串口服务 -->
+        <service
+            android:name="com.ubtechinc.cruzr.coreservices.services.CruzrSerialPortServices"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.cruzr.coreservices.services.CruzrSerialPortServices" />
+            </intent-filter>
+        </service>
+
+        <!-- 头部串口服务 -->
+        <service
+            android:name="com.ubtechinc.cruzr.coreservices.services.CruzrSerialPortHeaderServices"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.cruzr.coreservices.services.CruzrSerialPortHeaderServices" />
+            </intent-filter>
+        </service>
+        <!-- iflytek linxi服务 -->
+        <service
+            android:name="com.ubtechinc.cruzr.coreservices.services.CruzrSerialPortIflytekServices"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.cruzr.coreservices.services.CruzrSerialPortIflytekServices" />
+            </intent-filter>
+        </service>
+        <!-- cruiser串口服务 -->
+        <service
+            android:name="com.ubtechinc.cruzr.coreservices.services.CruzrSerialPortServices"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.cruzr.coreservices.services.CruzrSerialPortServices" />
+            </intent-filter>
+        </service>
+        <!--
+                       把SOCKET服务放到MAINSEVICE里去
+        <service
+            android:name="com.ubtechinc.services.Alpha2SocketServices"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.services.Alpha2SocketServices" />
+            </intent-filter>
+        </service>
+        -->
+        <!-- 动作播放服务 -->
+        <service
+            android:name="com.ubtechinc.cruzr.coreservices.services.CruzrActionServices"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.cruzr.coreservices.services.CruzrActionServices" />
+            </intent-filter>
+        </service>
+
+        <!-- 蓝牙电话串口服务 -->
+        <service
+            android:name="com.ubtechinc.cruzr.coreservices.services.CruzrBlueToothSerialPortServices"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.cruzr.coreservices.services.CruzrBlueToothSerialPortServices" />
+            </intent-filter>
+        </service>
+
+        <!-- 主服务 -->
+        <service
+            android:name="com.ubtechinc.cruzr.coreservices.services.MainService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.cruzr.coreservices.services.MainService" />
+            </intent-filter>
+        </service>
+
+        <!-- 二维码扫描服务 -->
+
+        <service
+            android:name="com.ubtechinc.cruzr.coreservices.services.CruzrQRCodeService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.cruzr.coreservices.services.CruzrQRCodeService" />
+            </intent-filter>
+        </service>
+
+        <!-- 讯飞语音服务 -->
+        <service
+            android:name="com.ubtechinc.cruzr.coreservices.services.IflytekSpeeckServices"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.cruzr.coreservices.services.IflytekSpeeckServices" />
+            </intent-filter>
+        </service>
+
+        <!-- Nuance语音服务 -->
+        <service
+            android:name="com.ubtechinc.cruzr.coreservices.services.NuanceSpeeckServices"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.cruzr.coreservices.services.NuanceSpeeckServices" />
+            </intent-filter>
+        </service>
+
+        <!-- xmpp服务 -->
+        <service
+            android:name="com.ubtechinc.cruzr.coreservices.services.CruzrXmppServices"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.cruzr.coreservices.services.CruzrXmppServices" />
+            </intent-filter>
+        </service>
+        <!-- ROS控制服务 -->
+          - 
+        <service
+            android:name="com.ubtechinc.cruzr.coreservices.services.RosControlServices"
+            android:process=":remote1"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.cruzr.coreservices.services.RosControlServices" />
+            </intent-filter>
+        </service>
+
+        <!-- 表情设置服务 -->
+
+        <service
+            android:name="com.ubtechinc.cruzr.coreservices.face.CruzrCoreFaceServie"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.cruzr.coreservices.face.CruzrCoreFaceServie" />
+            </intent-filter>
+        </service>
+        <!-- android:theme="@style/CaptureTheme" -->
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.hardware.test.AudioMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hardware.test.MusicPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.hardware.test.MusicService" >
+        </service>
+        <!--
+        <activity
+            android:name="com.hardware.test.CameraActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name="com.google.zxing.client.android.encode.EncodeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.ENCODE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- This allows us to handle the Share button in Contacts. -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/x-vcard" />
+            </intent-filter>
+            <!-- This allows us to handle sharing any plain text . -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ubtechinc.cruzr.coreservices.camera.CameraActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <receiver
+            android:name="com.ubtechinc.cruzr.coreservices.receiver.BootReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter android:priority="90000" >
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- 解锁完成后会调用 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <!-- 监听情景切换 -->
+                <action android:name="android.media.RINGER_MODE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <!-- 注意这个地方的位置，是在application标签里面；android:authorities对应Provider.AUTHORITY -->
+        <provider
+            android:name="com.ubtechinc.cruzr.coreservices.db.provider.Alpha2Provider"
+            android:authorities="com.ubtechinc.alpha2services.alpha2app"
+            android:exported="true" />
+        <provider
+            android:name="com.ubtechinc.cruzr.coreservices.db.provider.StateProvider"
+            android:authorities="com.ubtechinc.alpha2services.alpha2state"
+            android:exported="true" />
+        <provider
+            android:name="com.ubtechinc.cruzr.coreservices.db.provider.Alpha2SpeechPluginProvider"
+            android:authorities="com.ubtechinc.alpha2services.alpha2speech"
+            android:exported="true" />
+        <!-- 监听APP 安装/卸载广播 -->
+        <!-- android:name="com.ubtechinc.utils.appmanager.AppManager$AppPackageBroadcast" -->
+        <receiver
+            android:name="com.ubtechinc.cruzr.coreservices.appmanager.AppManager$AppPackageBroadcast"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.ubtechinc.cruzr.coreservices.appmanager.RestartBroadcast"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.RestartAlphaBroadcast" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 监听APP 安装/卸载广播 end -->
+        <!-- 闹钟 -->
+
+        <receiver android:name="com.ubtechinc.cruzr.coreservices.deskclock.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="com.ubtechinc.alpha2services.ALARM_ALERT" />
+                <action android:name="alarm_killed" />
+                <action android:name="cancel_snooze" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ubtechinc.cruzr.coreservices.deskclock.AlarmInitReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.ubtechinc.cruzr.coreservices.deskclock.AlarmProvider"
+            android:authorities="com.android.deskclock23"
+            android:exported="true" />
+        <!-- 闹钟 -->
+
+    </application>
+
+    <!-- 联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 联系人权限 -->
+    <!-- 静默安装  只需执行的操作的需要进行系统签名 -->
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- junit configure -->
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="junit for cruiser"
+        android:targetPackage="com.ubtechinc.cruiserservices" />
+
+</manifest>

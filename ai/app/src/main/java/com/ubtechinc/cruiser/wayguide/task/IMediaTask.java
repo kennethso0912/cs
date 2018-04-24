@@ -1,0 +1,1 @@
+package com.ubtechinc.cruiser.wayguide.task;import com.ubtechinc.cruiser.wayguide.model.Media;import java.util.ArrayList;/** * Created on 2017/7/5. * * @Author KennethSo * @Version 1.0.0 * @Desc */public interface IMediaTask {    void start();    void stop();}

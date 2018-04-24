@@ -1,0 +1,1 @@
+package com.ubtechinc.cruiser.wayguide.exception;/** * Created on 2017/4/5. * * @Author KennethSo * @Version 1.0.0 * @Des 获取地图失败异常 */public class NoMapException extends Exception {    public NoMapException(String detailMsg){        super(detailMsg);    }}

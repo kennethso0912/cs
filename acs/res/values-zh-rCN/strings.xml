@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CruzrCoreServices</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="no_cfg_wifi">当前没有配置WIFI连接</string>
+    <string name="welcome_tips">你好，欢迎使用</string>
+    <string name="onScanQR">正在进行二维码配置网络</string>
+    <string name="onScanQRResult">二维码扫描结束</string>
+    <string name="robot_no_signup">未激活机器人</string>
+
+    <!-- 提示音文件 -->
+    <string name="audio_start">tone_start_ogg.jet</string>
+    <string name="audio_wait">audio_wait.mp3</string>
+    <string name="audio_error">tone_error_ogg.jet</string>
+    <string name="audio_result">tone_result_ogg.jet</string>
+    <!-- Default label to display for an alarm -->
+    <string name="default_label">Alarm</string>
+    <!--
+         Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to never repeat
+    -->
+    <string name="never">Never</string>
+    <!--
+       Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to repeat every day
+    -->
+    <string name="every_day">every day</string>
+    <string name="day_concat">", "</string>
+    <string name="cooee_wifi_connecting">正在连接wifi</string>
+    <string name="cooee_wifi_connecting_erro">网络连接失败</string>
+    <string name="hint_not_register">请扫描我的二维码成为我的主人吧</string>
+    <string name="hint_no_network">请帮我联网，让我可以做更多的事情</string>
+    <string name="connect_wifi_suceed">我已经连接到了网络</string>
+    <string name="connect_wifi_failed">连接网络失败，帮我看看怎么回事吧</string>
+    <string name="hint_have_register">从今天开始你就是我的主人了，我会一直陪着你</string>
+    <string name="hint_wakeup">我听到你叫我了，有什么事吗</string>
+    <string name="hint_rest">我休息一下</string>
+    <string name="hint_low_power">我的电量不足了，请为我充电吧</string>
+    <string name="hint_say_bye">我休息了，下次再见</string>
+    <string name="hint_good_moring">早上好</string>
+    <string name="hint_good_noon">中午好</string>
+    <string name="hint_good_afternoon">下午好</string>
+    <string name="hint_good_evening">晚上好</string>
+
+    <!-- 没有网络 -->
+    <string name="hint_no_network_0">我断网咯，请帮我连接网络吧</string>
+    <string name="hint_no_network_1">请帮我联网，让我可以做更多的事情</string>
+    <string name="hint_no_network_2">连不上网的我只能发挥我能力的百分之一</string>
+
+    <!-- 网络已连接 -->
+    <string name="hint_connect_wifi_suceed_0">我已经连上了网络</string>
+    <string name="hint_connect_wifi_suceed_1">连接网络成功，我感觉充满力量</string>
+    <string name="hint_connect_wifi_suceed_2">连上网的感觉真好</string>
+
+    <!-- 唤醒 
+    <string name="hint_wakeup_0">我听到你叫我了，有什么事吗</string>
+    <string name="hint_wakeup_1">我在这呢</string>
+    <string name="hint_wakeup_2">有什么需要我帮忙的吗？</string>
+    -->
+    
+
+    <!-- 动作文件 -->
+    <string name="action_no_network_0">我断网咯，请帮我连接网络吧.ubx</string>
+    <string name="action_no_network_1">请帮我联网，让我可以做更多的事情.ubx</string>
+    <string name="action_no_network_2">连不上网我只能发挥能力的百分之一.ubx</string>
+    <string name="action_connect_wifi_suceed_0">我已经连上了网络.ubx</string>
+    <string name="action_connect_wifi_suceed_1">连接网络成功，我感觉充满力量.ubx</string>
+    <string name="action_connect_wifi_suceed_2">连上网的感觉真好.ubx</string>
+    <string name="action_wakeup_0">我听到你叫我了，有什么事吗.ubx</string>
+    <string name="action_wakeup_1">我在这呢.ubx</string>
+    <string name="action_wakeup_2">有什么需要我帮忙的吗.ubx</string>
+    <string name="title_activity_test_sn">TestSnActivity</string>
+    <!-- 体现 -->
+    <string name="remind_hour">点</string>
+    <string name="remind_munite">分</string>
+    <string name="remind_timeup">,时间到了！</string>
+
+</resources>

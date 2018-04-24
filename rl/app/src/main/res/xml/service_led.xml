@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service name="led">
+    <call path="/setOn"/>
+    <call path="/setOff"/>
+    <call path="/getList"/>
+</service>

@@ -1,0 +1,70 @@
+syntax = "proto3";
+option java_package = "com.ubtrobot.led.protos" ;
+import "google/protobuf/any.proto" ;
+
+
+
+
+
+//机器人本体具备的灯
+message LedInfo {
+    int32 lId = 1;//led id
+    repeated int32 effect=2;//灯效集合
+    repeated int32 color=3;  //颜色集合
+    repeated int32 bright=4;//亮度集合
+}
+
+message LedIds{
+      repeated int32 ids=1;
+}
+
+
+//用户组装后的led
+message Led{
+    int32 lId=1;
+    int32 color=3;
+    int32 bright=4;
+//    string effect=5;
+    map <string ,string> effect=5;
+}
+
+
+
+message Leds{
+    repeated Led leds=1;
+}
+
+//灯效模式
+message Effect{
+    int32 value=1;
+}
+
+//灯颜色
+message Color{
+    int32 value=1;
+}
+
+//灯亮度
+message Bright{
+    int32 value=1;
+}
+
+message LedInfos {
+    repeated LedInfo led = 1;
+}
+
+
+
+//语音识别结果
+message SpeechResult {
+    //语音命令
+    string call = 1;
+    //引擎类型
+    string engine = 2;
+    //原始语音识别结果：不同语音引擎，数据格式不一样，目前科大讯飞是json字符串
+    //各语音引擎按需填入
+    google.protobuf.Any any = 3;
+}
+
+
+
