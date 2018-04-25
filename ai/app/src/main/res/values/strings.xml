@@ -1,24 +1,24 @@
 <resources>
     <string name="app_name">游览</string>
     <string name="follow_me">请大家跟我来</string>
-    <string name="no_admin">您好，游览需要在管理员模式下才可以进行</string>
+    <string name="no_admin">您好，游览需要在管理员模式下才可进行哦</string>
     <string name="continue_way_guider">现在我们继续游览</string>
-    <string name="intro_again_answer">好的，这次可要听清楚了</string>
+    <string name="intro_again_answer">好的，这次可要听清楚了哦</string>
     <string name="intro_end_answer">好的，今天的介绍就到此为止了，谢谢大家</string>
     <string name="intro_end_normal">那么，今天的介绍就到此为止了，谢谢大家</string>
     <string name="next_loc">下面我们将前往下一个位置%s</string>
-    <string name="here_intro_tip_last">这里是%1$s , 大家有什么问题都可以问我，记得在问题前面加%2$s </string>
-    <string name="intro_tip_last">大家有什么问题都可以问我</string>
-    <string name="intro_tip_last_deprecated">大家有什么问题都可以问我，记得在问题前面加%s </string>
-    <string name="intro_tip">%1$s 大家有什么问题都可以问我，记得在问题前面加%2$s</string>
+    <string name="here_intro_tip_last">这里是%1$s , 大家有什么问题都可以问我哦，记得在问题前面加%2$s </string>
+    <string name="intro_tip_last">大家有什么问题都可以问我哦</string>
+    <string name="intro_tip_last_deprecated">大家有什么问题都可以问我哦，记得在问题前面加%s </string>
+    <string name="intro_tip">%1$s 大家有什么问题都可以问我哦，记得在问题前面加%2$s</string>
     <string name="intro_pause">我在这儿等着你</string>
     <string name="no_map">请先在地图应用中选择一张地图</string>
     <string name="no_wayguide_path">没有游览路线</string>
     <!--<string name="no_wayguide_medias">游览点任务不能为空，请先在PC设置游览点任务</string>-->
-    <string name="not_start">还未开始游览</string>
-    <string name="not_pause">还未暂停过游览</string>
+    <string name="not_start">还未开始游览哦</string>
+    <string name="not_pause">还未暂停过游览哦</string>
 
-    <string name="had_started">已经开始过游览，此时你可以说"继续游览"或"结束游览"来进行游览过程</string>
+    <string name="had_started">已经开始过游览哦，此时你可以说"继续游览"或"结束游览"来进行游览过程哦</string>
 
     <string name="nav_fail">游览导航失败，本次游览结束</string>
 
@@ -26,14 +26,14 @@
     <string name="unreachable_destination">游览失败，位置不可达到，请检查地图位置</string>
     <string name="nav_is_incorrent">导航定位偏了,游览结束，若想再次游览，请说"开始游览"</string>
 
-    <string name="no_arrival">还未到达游览点</string>
-    <string name="intro_again_tts_deprecated">好的，这次可要听清楚了 %s 大家有什么问题都可以问我，记得在问题前面加我的名字克鲁泽</string>
-    <string name="intro_again_tts">好的，这次可要听清楚了 %1$s 大家有什么问题都可以问我，记得在问题前面加%2$s</string>
+    <string name="no_arrival">还未到达游览点哦</string>
+    <string name="intro_again_tts_deprecated">好的，这次可要听清楚了哦 %s 大家有什么问题都可以问我哦，记得在问题前面加我的名字克鲁泽</string>
+    <string name="intro_again_tts">好的，这次可要听清楚了哦 %1$s 大家有什么问题都可以问我哦，记得在问题前面加%2$s</string>
 
-    <string name="say_again">好的，这次可要听清楚了</string>
+    <string name="say_again">好的，这次可要听清楚了哦</string>
 
-    <string name="pic_video_fail_tts">%1$s尚未加载完成，请稍后再试 大家有什么问题都可以问我，记得在问题前面加%2$s</string>
-    <string name="pic_video_fail_tts_new">%s尚未加载完成，请稍后再试 </string>
+    <string name="pic_video_fail_tts">%1$s尚未加载完成，请稍后再试哦 大家有什么问题都可以问我哦，记得在问题前面加%2$s</string>
+    <string name="pic_video_fail_tts_new">%s尚未加载完成，请稍后再试哦 </string>
 
     <string name="media_type_1">图片</string>
     <string name="media_type_2">视频</string>
@@ -45,13 +45,14 @@
     
     <string name="default_robot_name">克鲁泽</string>
 
+
     <string name="tip_continue">请说 %s继续游览</string>
 
     <string name="cmd_old">开始游览|带我游览一下|暂停游览|游览开始|继续游览|结束游览|再介绍一遍</string>
 
 
     <!-- 新的语音指令配置，暂时在develop分支-->
-    <string name="cruiser_call">开始游览|开始游览吧|带我们游览一下|带我们参观一下|带我游览一下|暂停游览|中断游览|接着游览|接着参观|游览开始|继续游览|结束游览|停止游览|退出游览|结束游览吧|停止游览吧|退出游览吧|再讲一次|再讲一遍|请再讲一次|请再讲一遍|再讲一次吧|再讲一遍吧|讲多一次|再介绍一遍|查看游览下载|恢复游览|开始参观|继续参观|暂停参观|结束参观</string>
+    <string name="cruiser_call">开始游览|开始游览吧|带我们游览一下|带我们参观一下|带我游览一下|暂停游览|中断游览|接着游览|接着参观|游览开始|继续游览|结束游览|停止游览|退出游览|结束游览吧|停止游览吧|退出游览吧|再讲一次|再讲一遍|请再讲一次|请再讲一遍|再讲一次吧|再讲一遍吧|讲多一次|再介绍一遍|查看游览下载|恢复游览</string>
 
     <!-- 老的语音指令配置-->
     <string name="cmd">开始游览|开始游览吧|带我们游览一下|带我们参观一下|带我游览一下|暂停游览|中断游览|接着游览|接着参观|游览开始|继续游览|结束游览|停止游览|退出游览|结束游览吧|停止游览吧|退出游览吧|再讲一次|再讲一遍|请再讲一次|请再讲一遍|再讲一次吧|再讲一遍吧|讲多一次|再介绍一遍|查看游览下载</string>
@@ -68,16 +69,12 @@
 
     <string name="tip_return_parking">我要回工作岗位了  下次见</string>
 
-    <string name="not_start_intro_yet">还未开始讲解</string>
+    <string name="not_start_intro_yet">还未开始讲解哦</string>
 
     <string name="ask_start">如需开始游览请说确认</string>
 
     <string name="ask_contiune">如需继续游览请说确认</string>
 
     <string name="tips_asr_yes">确认</string>
-
-    <string name="try_again_later">请稍候再试</string>
-    
-    <string name="obstacle_tts">请让一让</string>
 
 </resources>

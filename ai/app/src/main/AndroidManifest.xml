@@ -84,14 +84,6 @@
             </intent-filter>
         </receiver>
 
-        <!-- 关机的广播-->
-        <receiver android:name=".receiver.PowerOffReceiver"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.ubtinc.cruzr.action.POWEROFF"/>
-            </intent-filter>
-        </receiver>
-
         <!-- 提供给外部通过广播调启"开始游览"-->
         <receiver android:name=".receiver.OutSideStartReceiver">
             <intent-filter>
@@ -104,6 +96,14 @@
             android:exported="false">
             <intent-filter>
                 <action android:name="com.ubtechinc.cruzrpowersettings.gotocharge"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 关机的广播-->
+        <receiver android:name=".receiver.PowerOffReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.ubtinc.cruzr.action.POWEROFF"/>
             </intent-filter>
         </receiver>
 
@@ -148,10 +148,10 @@
         <meta-data android:name="cruiser_priority" android:value="1" />
 
 
-        <!-- 以下是老的指令配置 start
+        <!-- 以下是老的指令配置 start-->
         <meta-data android:name="cruiser_call" android:value="@string/cmd"/>
         <meta-data android:name="cruiser_call_en" android:value="@string/cmd_en"/>
-         以下是老的指令配置 end-->
+        <!-- 以下是老的指令配置 end-->
 
     </application>
 

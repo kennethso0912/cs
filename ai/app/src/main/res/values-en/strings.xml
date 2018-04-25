@@ -64,8 +64,4 @@
     <string name="tips_asr_yes">yes</string>
 
     <string name="btn_txt_jump">Skip</string>
-
-    <string name="try_again_later">please try again later</string>
-    
-    <string name="obstacle_tts">please give a way</string>
 </resources>
