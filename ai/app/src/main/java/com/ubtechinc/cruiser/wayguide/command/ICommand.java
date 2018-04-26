@@ -1,1 +1,0 @@
-package com.ubtechinc.cruiser.wayguide.command;/** * Created on 2017/11/3. * * @Author KennethSo * @Version 1.0.0 * @Desc */public interface ICommand {    void execute();}

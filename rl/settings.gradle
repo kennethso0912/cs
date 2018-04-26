@@ -1,1 +1,0 @@
-include ':app', ':ledsdk', ':ledcontext', ':alpha', ':alphaledcmd', ':alphaledentity', ':alphaledservice', ':cruzr', ':ledprotos', ':alphamini', ':testalphamini'

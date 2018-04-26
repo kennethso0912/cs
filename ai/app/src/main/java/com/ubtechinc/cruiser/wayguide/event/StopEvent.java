@@ -1,1 +1,0 @@
-package com.ubtechinc.cruiser.wayguide.event;/** * Created on 2017/3/2. * * @Author KennethSo * @Version 1.0.0 * @Des 停止任务事件(包括停止图片和视频，TTS等媒体任务) */public class StopEvent {    public static final int TASK_EVENT_STOP = 1;    public int in;    public String name;}

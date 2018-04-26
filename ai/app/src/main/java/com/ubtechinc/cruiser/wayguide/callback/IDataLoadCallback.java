@@ -1,1 +1,0 @@
-package com.ubtechinc.cruiser.wayguide.callback;/** * Created on 2017/3/24. * * @Author KennethSo * @Version 1.0.0 * @Des 游览数据加载回调 */public interface IDataLoadCallback {    void onFinish();    void onFail(String err);//相关错误的播报}
